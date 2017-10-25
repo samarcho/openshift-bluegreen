@@ -10,6 +10,12 @@ node {
   def active   = ""
   def newcolor = ""
 
+  if(BUILD_NUMBER.toInteger() &1) {
+    newColor = "green"
+  } else {
+    newColor = "blue"
+  }
+  /**
   switch (BUILD_NUMBER.toInteger() % 10) {
     case 1:
         newcolor="red"
@@ -41,6 +47,7 @@ node {
     case 0:
         newcolor="blue"
         break
+        **/
   }
 
   stage('Determine Deployment color') {
