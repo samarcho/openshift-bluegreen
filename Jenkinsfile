@@ -10,7 +10,7 @@ node {
   def active   = ""
   def newcolor = ""
 
-  if(BUILD_NUMBER.toInteger() &1) {
+  if( (BUILD_NUMBER.toInteger())%2==0 ) {
     newColor = "green"
   } else {
     newColor = "blue"
