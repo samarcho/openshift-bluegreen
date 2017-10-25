@@ -47,8 +47,8 @@ node {
     case 0:
         newcolor="blue"
         break
-        **/
   }
+  **/
 
   stage('Determine Deployment color') {
     // Determine current project
